@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Balugas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="/" id="navbar_logo"><img src="/images/TheBalugas2.jpg" alt="The Balugas" id="logo_image"></a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="/" class="navbar_links">Home</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="/" class="navbar_links">About</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="/" class="navbar_links">Stream</a>
+                </li>
+                <li class="navbar_btn">
+                    <a href="/" class="button">Sign Up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <!-- Home -->
+    <div class="home">
+        <div class="home_container">
+            <div class="home_content">
+                <h1>The Balugas</h1>
+                <p>Debut Single</p>
+                <p>"Something Serious"</p>
+                <button type="submit">Stream Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="about">
+        <div class="about_container">
+            <div class="about_content">
+                <h1>Who Are We?</h1>
+                <p>Hailing (mostly) from Falkirk, Scotland - this four-piece regularly plays in both Glasgow and Edinburgh music scenes, making a name for themselves with their ability to adapt different indie styles into one coherent, catchy and unique sound. With raw lyrics on topics like romance, class and ageing written by Aiden Lyons (Rhythm Guitar and Vocals) hidden with layers of slacker pop, jazz, indie rock and a wee bit of punk - executed by Ryan Farmer (Bass), Craig Bachen (Drums) complete with the addition of Kate Rankin (Lead Guitar and resident Weegie).</p>
+            </div>
+        </div>
+            <div class="aboutvid_container">
+                <video id="aboutvid" controls autoplay>
+                    <source src="/images/kingtuts.mp4" type="video/mp4">
+                </video>
+            </div>
+    </div>
+
+    <!-- Stream -->
+    <div class="stream">
+        <div class="stream_container">
+            <h1>Stream</h1> 
+            <a href="https://open.spotify.com/track/1IVmJ5oX0DK5lTarn3FK7r?si=861dfe4d834a46d2"><img src="/images/smthnserious.jpg" alt="single cover"/></a>
+            <a href="https://music.youtube.com/watch?v=KQRuXeq8g-A"><img src="/images/smthnserious.jpg" alt="single cover"/></a>
+            <a href="https://music.apple.com/gb/album/something-serious/1655349306?i=1655349664"><img src="/images/smthnserious.jpg" alt="single cover"/></a>
+            <a target="_blank" href="/"><img src="/images/smthnserious.jpg" alt="single cover"/></a>
+            <h3 id="s">Spotify</h3>
+            <h3 id="y">Youtube Music</h3>
+            <h3 id="a">Apple Music</h3>
+            <h3 id="d">Deezer</h3> 
+        </div>
+    </div>
+
+    <!-- Sign Up -->
+    <div class="signup">
+        <div class="signup_container">
+            <div class="signup_content">
+                <h1>Sign Up</h1>
+                <p>Join our mailing list and be the first to know about new releases!</p>
+                <form class="form">
+                    <!-- user inputs can be dangerous -->
+                    <!-- would need to make sure nothing bad can be entered like SQL DELETE * which would delete database etc-->
+                    <input type="text" id="email" name="email" placeholder="Email">
+                    <select id="country" name="country" placeholder="Country">
+                    <option value="australia">UK</option>
+                    <option value="canada">Canada</option>
+                    <option value="canada">Australia</option>
+                    <option value="usa">USA</option>
+                    </select>
+                    <input type="submit" id="submit" value="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer_container">
+            <a target="_blank" href="https://www.instagram.com/thebalugas/?hl=en"><img id="ig1" src="/images/ig1.png" alt="instagram"/></a>
+            <a target="_blank" href="https://twitter.com/thebalugasband"><img id="twitter" src="/images/twitter1.png" alt="twitter"/></a>
+            <a target="_blank" href="https://www.tiktok.com/@thebalugas?lang=en"><img id="tiktok" src="/images/tt3.png" alt="tik tok"/></a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCjORQ9GHeq_5KHL7vKYV0Sg"><img id="yt" src="/images/yt3.png" alt="youtube"/></a>
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="app.js"></script>
+</body>
+</html>
